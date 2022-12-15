@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1019844773
+    locked: 0
+  - name: BarracksDown_Back
+    uniqueID: 3305537031
+    locked: 0
+  - name: BarracksMiddle_Back
+    uniqueID: 1692143123
+    locked: 0
+  - name: PlayerPos5
+    uniqueID: 1676354211
+    locked: 0
+  - name: ZaVod
+    uniqueID: 2394109671
+    locked: 0
+  - name: PlayerPos4
+    uniqueID: 39596729
+    locked: 0
+  - name: Building
+    uniqueID: 3254768413
+    locked: 0
+  - name: PlayerPos3
+    uniqueID: 447726759
+    locked: 0
+  - name: MiddleLast
+    uniqueID: 1616663463
+    locked: 0
+  - name: PlayerPos2
+    uniqueID: 866332163
+    locked: 0
+  - name: Middle
+    uniqueID: 1594996421
+    locked: 0
+  - name: PlayerPos1
+    uniqueID: 4098290849
+    locked: 0
+  - name: BarracksDown_Front
+    uniqueID: 1277627365
+    locked: 0
+  - name: BarracksMiddle_Front
+    uniqueID: 2414515807
+    locked: 0
+  - name: Foreground
+    uniqueID: 3858295203
+    locked: 0
+  - name: Transistor
+    uniqueID: 2952163263
+    locked: 0
+  - name: InGameMenus
+    uniqueID: 304012909
+    locked: 0
+  - name: Interface
+    uniqueID: 1812047237
+    locked: 0
+  - name: debug foreground
+    uniqueID: 3297113059
+    locked: 0

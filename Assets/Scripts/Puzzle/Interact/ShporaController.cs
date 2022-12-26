@@ -13,13 +13,13 @@ public class ShporaController : MonoBehaviour
         isOpen = false;   
     }
 
-    public void openShpora()
+    public void OpenShpora()
     {
         shporaImage.SetActive(true);
         isOpen = true;
     }
 
-    public void closeShpora()
+    public void CloseShpora()
     {
         shporaImage.SetActive(false);
         isOpen = false;

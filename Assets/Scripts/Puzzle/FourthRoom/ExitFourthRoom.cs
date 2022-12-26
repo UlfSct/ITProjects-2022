@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class ExitFourthRoom : MonoBehaviour
 {
-    SpriteRenderer sr;
-
-    void Start()
-    {
-        sr = GameObject.Find("ThirdRoomTerminal").GetComponent<SpriteRenderer>();
-    }
+    public SpriteRenderer sr;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

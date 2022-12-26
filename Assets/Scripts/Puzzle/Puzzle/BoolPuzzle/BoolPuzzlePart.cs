@@ -38,7 +38,7 @@ public class BoolPuzzlePart : MonoBehaviour
             if (isSwap)
             {
                 var tmp = elements[count].transform.position;
-                elements[count].transform.position = this.gameObject.transform.position;;
+                elements[count].transform.position = this.gameObject.transform.position;
                 this.gameObject.transform.position = tmp;
                 boolPuzzlePartScript = elements[count].GetComponent<BoolPuzzlePart>();
                 elements[count].GetComponent<SpriteRenderer>().sprite = boolPuzzlePartScript.GetComponent<BoolPuzzlePart>().normalSprite;

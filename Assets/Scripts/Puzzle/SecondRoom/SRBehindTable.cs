@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SRBehindTable : MonoBehaviour
 {
-    SpriteRenderer sr;
+    public SpriteRenderer sr;
 
     void Start()
     {
-        sr = GameObject.Find("SecondRoomTable").GetComponent<SpriteRenderer>();
+        //sr = GameObject.Find("SecondRoomTable").GetComponent<SpriteRenderer>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

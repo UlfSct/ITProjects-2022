@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1881103795
-  m_SortingLayer: 3
+  m_SortingLayerID: 1143544975
+  m_SortingLayer: 24
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 08003dcf2042c2c498402d52a81f8aad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -105,8 +105,8 @@ EdgeCollider2D:
   - {x: 3.3901443, y: 7.9891186}
   - {x: 3.4480238, y: -2.5087376}
   - {x: -6.9619446, y: -7.847267}
-  - {x: -7.9432716, y: -8.398813}
-  - {x: -8.035912, y: -9.308518}
+  - {x: -7.7322617, y: -8.451567}
+  - {x: -7.9567833, y: -9.308518}
   - {x: -7.0360546, y: -9.82803}
   - {x: -7.019476, y: -8.920511}
   - {x: 3.1281586, y: -3.5079384}

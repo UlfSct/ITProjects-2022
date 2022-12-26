@@ -8,6 +8,8 @@ public class StartMenuScripts : MonoBehaviour
     private int savedCurrentLevel;
     private bool thereIsStartedGame;
     public GameObject continueButton;
+    public GameObject mainMenu;
+    public GameObject settingsMenu;
 
 
     public void Start()
@@ -18,6 +20,7 @@ public class StartMenuScripts : MonoBehaviour
             PlayerPrefs.SetInt("firstLevelCompleted", 0);
             PlayerPrefs.SetInt("secondLevelCompleted", 0);
             PlayerPrefs.SetInt("thereIsStartedGame", 0);
+            PlayerPrefs.Save();
         }
 
         thereIsStartedGame = PlayerPrefs.GetInt("thereIsStartedGame") == 1 ? true : false;
@@ -53,17 +56,26 @@ public class StartMenuScripts : MonoBehaviour
 
     public void StartNewGame()
     {
+        PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("currentLevel", 0);
         PlayerPrefs.SetInt("firstLevelCompleted", 0);
         PlayerPrefs.SetInt("secondLevelCompleted", 0);
         PlayerPrefs.SetInt("thereIsStartedGame", 1);
+        PlayerPrefs.Save();
 
         SceneManager.LoadScene("Hub");
     }
 
-    public void ShowSettings()
+    public void GoToMain()
     {
-        
+        settingsMenu.SetActive(false);
+        mainMenu.SetActive(true);
+    }
+
+    public void GoToSettings()
+    {
+        mainMenu.SetActive(false);
+        settingsMenu.SetActive(true);
     }
 
     public void QuitGame()

@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public bool pauseGame;
     public GameObject pauseMenu;
+    public GameObject settingsMenu;
     public GameObject pauseText;
 
     public InputField consoleParent;
@@ -19,6 +20,13 @@ public class PauseMenu : MonoBehaviour
 
     private string inputString; 
 
+    public void Start()
+    {
+        if (PlayerPrefs.HasKey("PauseMenuHintShow"))
+        {
+            pauseText.SetActive(false);
+        }
+    }
 
     public void Update()
     {
@@ -46,7 +54,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (inputString == "1")
         {
-            // вывести окно настроек
+            GoToSettings();
             incorrectInput.SetActive(false);
         }
         else if (inputString == "2")
@@ -97,9 +105,20 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         pauseText.SetActive(false);
+        PlayerPrefs.SetInt("PauseMenuHintShow", 0);
         Time.timeScale = 0f;
         pauseGame = true;
     }
 
-    
+    public void GoToMain()
+    {
+        settingsMenu.SetActive(false);
+        pauseMenu.SetActive(true);
+    }
+
+    public void GoToSettings()
+    {
+        pauseMenu.SetActive(false);
+        settingsMenu.SetActive(true);
+    }
 }

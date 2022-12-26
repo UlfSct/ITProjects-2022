@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PuzzlePiece
+  - TextPuzzle
+  - Puzzle
   layers:
   - Default
   - TransparentFX
@@ -97,4 +100,37 @@ TagManager:
     locked: 0
   - name: debug foreground
     uniqueID: 3297113059
+    locked: 0
+  - name: PlayerBehindGlasses
+    uniqueID: 3824492607
+    locked: 0
+  - name: TRCase
+    uniqueID: 1815109009
+    locked: 0
+  - name: TRGlasses
+    uniqueID: 3182219823
+    locked: 0
+  - name: Glasses
+    uniqueID: 276735041
+    locked: 0
+  - name: Walls
+    uniqueID: 1143544975
+    locked: 0
+  - name: Cases
+    uniqueID: 3817338775
+    locked: 0
+  - name: PlayerInFrontOfTable
+    uniqueID: 1541480527
+    locked: 0
+  - name: Player
+    uniqueID: 2311582509
+    locked: 0
+  - name: PlayerBehindTables
+    uniqueID: 1596014725
+    locked: 0
+  - name: Puzzle
+    uniqueID: 3370824783
+    locked: 0
+  - name: Puzzle piece
+    uniqueID: 3323443381
     locked: 0

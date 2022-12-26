@@ -13,6 +13,8 @@ public class UICharManager : MonoBehaviour
     public InputField inputField;
     public string inputText;
 
+    public bool end = false;
+
     public void SaveInputText()
     {
         inputText = inputField.text;
@@ -36,6 +38,7 @@ public class UICharManager : MonoBehaviour
         outputText.text = dialog.sentences[1];
         inputField.gameObject.SetActive(false);
         endButton.gameObject.SetActive(true);
+        end = true;
     }
 
     private void BadEnd()

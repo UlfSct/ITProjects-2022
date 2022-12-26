@@ -14,6 +14,7 @@ public class InstantiateDialogue : MonoBehaviour
     public TextAsset ta;
 
     public string dialogueName;
+    public bool end;
 
     [SerializeField]
     public int currentNode = 0;
@@ -29,7 +30,7 @@ public class InstantiateDialogue : MonoBehaviour
         Window.SetActive(true);
         dialogue = Dialogue.Load(ta);
         nd = dialogue.nodes;
-
+        end = false;
 
         text.text = nd[currentNode].Npctext;
 
@@ -56,6 +57,8 @@ public class InstantiateDialogue : MonoBehaviour
             currentNode = 0;
         else
         {
+           if (dialogue.nodes[currentNode].answers[numberOfButton].end == "true") end = true;
+
            if (dialogue.nodes[currentNode].answers[numberOfButton].closeDialog == "true")
            {
                 Window.SetActive(false);

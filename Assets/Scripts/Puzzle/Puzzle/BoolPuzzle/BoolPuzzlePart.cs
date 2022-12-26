@@ -9,8 +9,11 @@ public class BoolPuzzlePart : MonoBehaviour
     public Sprite normalSprite;
     public Sprite activeSprite;
 
+    public FinishBoolPuzzle boolPuzleScript;
+
     private GameObject[] elements;
     private BoolPuzzlePart boolPuzzlePartScript;
+
 
     void Start()
     {
@@ -20,6 +23,9 @@ public class BoolPuzzlePart : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (boolPuzleScript.end) 
+            return;
+
         if (Input.GetMouseButtonDown(0))
         {
             int count = 0;

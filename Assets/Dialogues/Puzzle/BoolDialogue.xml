@@ -140,6 +140,7 @@
 		<answers>
 			<answer tonode = "13">
 				<text> Заверешить </text>
+				<dialend>true</dialend>
 				<closeDialog>true</closeDialog>
 			</answer>
 		</answers>

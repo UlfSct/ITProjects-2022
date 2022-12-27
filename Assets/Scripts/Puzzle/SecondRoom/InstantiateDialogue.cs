@@ -13,6 +13,8 @@ public class InstantiateDialogue : MonoBehaviour
 
     public TextAsset ta;
 
+    public bool end;
+
     public string dialogueName;
 
     [SerializeField]
@@ -29,6 +31,7 @@ public class InstantiateDialogue : MonoBehaviour
         Window.SetActive(true);
         dialogue = Dialogue.Load(ta);
         nd = dialogue.nodes;
+        end = false;
 
 
         text.text = nd[currentNode].Npctext;
@@ -56,6 +59,8 @@ public class InstantiateDialogue : MonoBehaviour
             currentNode = 0;
         else
         {
+            if (dialogue.nodes[currentNode].answers[numberOfButton].end == "true") end = true;
+
            if (dialogue.nodes[currentNode].answers[numberOfButton].closeDialog == "true")
            {
                 Window.SetActive(false);
@@ -72,11 +77,14 @@ public class InstantiateDialogue : MonoBehaviour
         firstButton.GetComponentInChildren<Text>().text = dialogue.nodes[currentNode].answers[0].text;
         if (dialogue.nodes[currentNode].answers.Length == 2)
         {
-            secondButton.enabled = true;
+            //secondButton.enabled = true;
+            secondButton.gameObject.SetActive(true);
             secondButton.GetComponentInChildren<Text>().text = dialogue.nodes[currentNode].answers[1].text;
         }
-        else {
-            secondButton.enabled = false;
+        else 
+        {
+            //secondButton.enabled = false;
+            secondButton.gameObject.SetActive(false);
             secondButton.GetComponentInChildren<Text>().text = "";
         }
     }

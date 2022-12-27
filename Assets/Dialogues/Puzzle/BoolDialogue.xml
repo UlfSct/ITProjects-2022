@@ -139,7 +139,8 @@
 		<npctext> Ты достоин того, чтобы общаться со мной на равных. Я помогу тебе открыть лифт, когда ты закончишь разбираться с днк BOOL. </npctext>
 		<answers>
 			<answer tonode = "13">
-				<text> Заверешить </text>
+				<text> Завершить </text>
+				<dialend>true</dialend>
 				<closeDialog>true</closeDialog>
 			</answer>
 		</answers>
